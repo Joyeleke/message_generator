@@ -66,12 +66,48 @@ const dailyQuotes = [
   "Today is the beginning of the rest of your life. Make it count.",
 ];
 
+const interestingFacts = [
+  "Honey, if stored in a sealed container, can last indefinitely. Archaeologists have even found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible.",
+  "Botanically speaking, bananas are classified as berries because they grow from a single ovary, while strawberries are not considered berries because they develop from a flower with multiple ovaries.",
+  "Octopuses have three hearts. Two pump blood to the gills, while the third pumps it to the rest of the body. Additionally, their blood is blue because it contains a copper-based molecule called hemocyanin.",
+  "Due to the expansion of iron in hot weather, the Eiffel Tower can grow up to 15 centimeters taller during the summer.",
+  "In 2010, a traffic jam in China stretched for over 60 miles and lasted for 12 days, becoming the longest traffic jam in history.",
+  "The longest time between two twins being born is 87 days. This unusual case occurred in the United Kingdom in 2012.",
+  "A day on Venus is longer than its year. Venus rotates very slowly on its axis, taking about 243 Earth days to complete one rotation, while its orbit around the Sun takes about 225 Earth days.",
+  "There is enough gold in the Earth's core to coat the planet's surface in a layer of gold approximately 1.5 feet thick if it were extracted and spread out evenly.",
+  "The shortest war in history was between Britain and Zanzibar on August 27, 1896. It lasted only 38 minutes.",
+  "The world's oldest known sample of the smallpox virus was found in the teeth of a 17th-century child buried in Lithuania. The virus was identified in 2016.",
+  "Hippopotamus milk is pink. It contains two unique acids called 'hipposudoric acid' and 'norhipposudoric acid,' which turn the milk a pink color and act as natural sunscreens for baby hippos.",
+  "The world's largest desert is not the Sahara but Antarctica. Although it's covered in ice, it receives very little precipitation, making it a desert by definition.",
+  "A group of flamingos is called a 'flamboyance.' These colorful birds are known for their striking pink plumage.",
+  "The original name for Bank of America was 'Bank of Italy.' It was founded in San Francisco to serve the financial needs of Italian immigrants.",
+  "A single strand of spaghetti is called a 'spaghetto.' The plural of 'spaghetto' is 'spaghetti.'",
+  "The oldest known recipe in the world is for beer. It dates back to ancient Mesopotamia, around 4,000 years ago.",
+  "The Great Wall of China is not visible from space with the naked eye. This is a common myth. Astronauts have said it's difficult to see even from low Earth orbit.",
+  "The world's largest pizza was over 13,000 square feet in size and was made in Rome, Italy, in 2012.",
+  "The unicorn is Scotland's national animal. It symbolizes purity and strength.",
+  "The shortest war in history was between Britain and Zanzibar on August 27, 1896. It lasted only 38 minutes.",
+  "The world's oldest known sample of the smallpox virus was found in the teeth of a 17th-century child buried in Lithuania. The virus was identified in 2016.",
+  "Hippopotamus milk is pink. It contains two unique acids called 'hipposudoric acid' and 'norhipposudoric acid,' which turn the milk a pink color and act as natural sunscreens for baby hippos.",
+  "The world's largest desert is not the Sahara but Antarctica. Although it's covered in ice, it receives very little precipitation, making it a desert by definition.",
+  "A group of flamingos is called a 'flamboyance.' These colorful birds are known for their striking pink plumage.",
+  "The original name for Bank of America was 'Bank of Italy.' It was founded in San Francisco to serve the financial needs of Italian immigrants.",
+  "A single strand of spaghetti is called a 'spaghetto.' The plural of 'spaghetto' is 'spaghetti.'",
+  "The oldest known recipe in the world is for beer. It dates back to ancient Mesopotamia, around 4,000 years ago.",
+  "The Great Wall of China is not visible from space with the naked eye. This is a common myth. Astronauts have said it's difficult to see even from low Earth orbit.",
+  "The world's largest pizza was over 13,000 square feet in size and was made in Rome, Italy, in 2012.",
+  "The unicorn is Scotland's national animal. It symbolizes purity and strength.",
+];
+
+
 const dailyVerseAndQuoteGenerator = () => {
   randomIndexOne = Math.floor(Math.random() * 31);
   randomIndexTwo = Math.floor(Math.random() * 31);
-  return [bibleVerses[randomIndexOne], dailyQuotes[randomIndexTwo]];
+  randomIndexThree = Math.floor(Math.random() * 31);
+  return [bibleVerses[randomIndexOne], dailyQuotes[randomIndexTwo], interestingFacts[randomIndexThree]];
 };
 
 const todayVerseAndQuote = dailyVerseAndQuoteGenerator();
-console.log(`Here is today's verse - ${todayVerseAndQuote[0]}`);
-console.log(`Here is today's quote - ${todayVerseAndQuote[1]}`);
+console.log(`Here is today's verse - ${todayVerseAndQuote[0]}\n`);
+console.log(`Here is today's quote - ${todayVerseAndQuote[1]}\n`);
+console.log(`Here is today's fun fact - ${todayVerseAndQuote[2]}\n`);
